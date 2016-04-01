@@ -4,11 +4,25 @@
   "description": "simple note , that sync with your cloud",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -w code/ -d build -s"
   },
   "keywords": [
     "note"
   ],
   "author": "andrew ananta",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "http": "0.0.0",
+    "httpdispatcher": "^1.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
 }
